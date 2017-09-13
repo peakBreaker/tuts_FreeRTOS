@@ -6,6 +6,12 @@
 *.user
 *.userosscache
 *.sln.docstates
+**/*.aux
+**/*.log
+**/*.gz
+**/*.out
+*/_minted-assignment
+.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
