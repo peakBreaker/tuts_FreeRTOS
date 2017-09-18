@@ -29,13 +29,13 @@ It is also possible to use the free software Eclipse for this assignment. Notes 
 - Familiarize yourself with the FreeRTOS API and locate to the main() function in the FreeRTOS project in Visual Studio Express
 
 - Here, create two tasks with the following parameters seen in the code window (hint look at xTaskCreate() in the API)
-
-                Task1 name="Task1"Task2 name="Task2"
-                Task1 stack size = 1000
-                Task2 stack size = 100
-                Task1 priority = 3
-                Task2 priority = 1
-
+```c
+    Task1 name="Task1"Task2 name="Task2"
+    Task1 stack size = 1000
+    Task2 stack size = 100
+    Task1 priority = 3
+    Task2 priority = 1
+```
 - Create task functions containing the following functionality
 
 Task1 should print out "This is task 1" every 100 milliseconds (hint use fflush(stdout) after printf())
