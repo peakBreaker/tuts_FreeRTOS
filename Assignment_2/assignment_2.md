@@ -99,8 +99,8 @@ It is also possible to use the free software Eclipse for this assignment. Notes 
     &matrix_handle);
     xTaskCreate((pdTASK_CODE)communication_task, (signed char *)"Communication", 
     configMINIMAL_STACK_SIZE, NULL, 1, &communication_handle);
-    -"communicationtask" must send a simulated data packet every 200ms but is often blocked by matrixtask, fix this problem without changing the functionality in the tasks.
 ```
+-"communicationtask" must send a simulated data packet every 200ms but is often blocked by matrixtask, fix this problem without changing the functionality in the tasks.
 -Create a new task "prioritysettask" which:
 
 Sets the priority of "communicationtask" to 4 in case its execution time is more than 1000 milliseconds (Hint: look at vApplicationTickHook() to measure it)
