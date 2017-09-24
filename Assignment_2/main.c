@@ -414,5 +414,4 @@ static void prioritysettask()
 		// -- Block the task for some ticks before we loop --
 		vTaskDelay(1000);
 	}
-
 }
